@@ -15,5 +15,9 @@ $("input[type='text']").keypress(function(e){
       var todoText = $(this).val();
       $(this).val("");
       $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>");
-   }
+   };
+});
+
+$(".fa-caret-down").click(function(){
+   $("input[type='text']").fadeToggle(200);
 })
